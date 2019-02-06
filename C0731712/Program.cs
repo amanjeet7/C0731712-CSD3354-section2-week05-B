@@ -36,6 +36,8 @@ namespace C0731712
         public dog fifi = new dog();
         public dog jordan = new dog();
         public dog fido = new dog();
+        public dog roy = new dog();
+        public dog coco = new dog();
 
         public void run()
         {
@@ -46,7 +48,7 @@ namespace C0731712
 
             fifi.dogname = "fifi";
             fifi.dogbreed = "poodle";
-            fifi.nextdog = jordan;
+            fifi.nextdog = roy;
 
             jordan.dogname = "jordan";
             jordan.dogbreed = "german sheppard";
@@ -55,6 +57,14 @@ namespace C0731712
             fido.dogname = "fido";
             fido.dogbreed = "beagle";
             fido.nextdog = null;
+
+            roy.dogname = "roy";
+            roy.dogbreed = "apaniel";
+            roy.nextdog = coco;
+
+            coco.dogname = "coco";
+            coco.dogbreed = "border collie";
+            coco.nextdog = jordan;
         }
 
         public void walkoverthelist()
